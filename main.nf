@@ -8,8 +8,8 @@ process sayHello {
   script:
     """
     echo '$x world!'
-
-    aws s3 ls $x
+    /home/ec2-user/miniconda/bin/aws --version
+    /home/ec2-user/miniconda/bin/aws aws s3 ls $x
 
     """
 }
